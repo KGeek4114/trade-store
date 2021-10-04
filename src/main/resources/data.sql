@@ -1,0 +1,4 @@
+insert into trade (seq_Id,trade_Id,version,country_Party_Id,book_Id,maturity_Date,created_Date,expired) values (1,'T1',1,'CP-1','B1',parseDateTime('20200520000000','yyyyMMddHHmmss'), CURRENT_DATE, 'N');
+insert into trade (seq_Id,trade_Id,version,country_Party_Id,book_Id,maturity_Date,created_Date,expired) values (2,'T2',2,'CP-2','B1',parseDateTime('20210520000000','yyyyMMddHHmmss'), CURRENT_DATE, 'N');
+insert into trade (seq_Id,trade_Id,version,country_Party_Id,book_Id,maturity_Date,created_Date,expired) values (3,'T2',1,'CP-1','B1',parseDateTime('20210520000000','yyyyMMddHHmmss'), parseDateTime('201503140000000','yyyyMMddHHmmss'), 'N');
+insert into trade (seq_Id,trade_Id,version,country_Party_Id,book_Id,maturity_Date,created_Date,expired) values (4,'T3',3,'CP-3','B2',parseDateTime('20140520000000','yyyyMMddHHmmss'), CURRENT_DATE, 'Y');
