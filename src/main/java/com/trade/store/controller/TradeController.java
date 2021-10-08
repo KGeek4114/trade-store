@@ -21,10 +21,10 @@ public class TradeController {
 	private TradeStoreService tradeStoreService;
 
 	@PostMapping("/createTradeOrder")
-	public ResponseEntity<Trade> createTradeOrder(@RequestBody TradeDTO tradeObj) {
+	public ResponseEntity<Trade> createTradeOrder(@RequestBody TradeDTO tradeObj) throws CustomDataException {
 
 		try {
-			Trade trade = tradeStoreService.createUpdateTradeOrder(tradeObj);
+			Trade trade = tradeStoreService.createUpdateTradeOrder(tradeObj);  
 
 			if (trade == null)
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -35,4 +35,6 @@ public class TradeController {
 		}
 
 	}
+	
+	
 }
